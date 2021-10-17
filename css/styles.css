@@ -412,7 +412,10 @@ textarea {
     line-height: 1.2;
     font-weight: normal;
     color: #102746;
-    
+  }
+
+  img {
+      max-width: 100%;
   }
 
   .wrapper {
@@ -537,7 +540,8 @@ textarea {
       max-width: 1262px;
       margin: 0 auto;
       box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-      position: relative;  
+      position: relative;
+      margin-bottom: 131px;  
   }
   .benefits-title {
        width: 100%;
@@ -564,8 +568,8 @@ textarea {
   }
 
   .benefits-card__pic {
-      width: 66px;
-      height: 66px;
+      max-width: 66px;
+      max-height: 66px;
   }
   .benefits-card__title {
     font-weight: 500;
@@ -574,31 +578,32 @@ textarea {
     color: #000000;
     margin-top: 37px;
   }
-  .benefits-card__support {
+  .benefits-card__desc {
     height: 72px;  
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    margin-top: 26px;  
-  }
-  .benefits-card__more {
-      margin-top: 39px;
+    margin-top: 26px;
+    margin-bottom: 39px;  
   }
 
-  .benefits-card__link {
+  .benefits-card__more {
+    display: inline-block;
+    padding-right: 59px;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
     color: #006DFE;
+    background: url(../img/svg/icon-cursor.svg) no-repeat right center;
+    transition: transform 0.3s ease-out;
   }
-  .benefits-card__link img {
-      padding-left: 26px;
-      padding-bottom: 3px;
+  
+  .benefits-card__more:hover, .benefits-card__link:focus {
+     transform: translateX(10px);
   }
-
-  .benefits-card__link:hover, .benefits-card__link:focus, .benefits-card__link:active {
-    color: #006DFE;
-}
-
   /* Benefits styles end */
+
+  /* Places styles start */
+
+  /* Places styles end */
